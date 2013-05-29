@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app="navbarapp">
+<head>
+    <meta charset="utf-8" />
+    <title>Twitter Bootstrap Navbar with AngularJS</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <script src="app/application.js"></script>
+</head>
+<body ng-controller="ThirdPageCtrl">
+
+    <bootstrap-navbar current-tab="Third"></bootstrap-navbar>
+
+    <div class="container">
+        <h1>{{pageName}}</h1>
+    </div>
+
+</body>
+
+</html>
