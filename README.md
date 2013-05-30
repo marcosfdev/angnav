@@ -1,6 +1,5 @@
-twitter-bootstrap-navbar-as-angularjs-directive
+AngularJS Pivot Table Demo 
 ===============================================
 
-Twitter Bootstrap Navbar component as an AngularJS reusable directive
+AngularJS with Twitter Bootstrap pivot table that loads a csv file
 
-This is also an illustration to my blog post: http://tomaszdziurko.pl/2013/02/twitter-bootstrap-navbar-angularjs-component/
