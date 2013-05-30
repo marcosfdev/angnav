@@ -1,0 +1,317 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  
+  <link rel="stylesheet" href="http://fonts.googleapis.com/style?family=Open+Sans:400,600,800">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="/styles/bootstrap-responsive.css">
+<link rel="stylesheet" href="/styles/ui-lightness/jquery-ui-1.8.21.custom.css">
+<link rel="stylesheet" href="/styles/application.css">
+<!-- Twitter Bootstrap -->
+<link rel="stylesheet" href="/styles/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="/styles/subnav.css" type="text/css" />
+<link rel="stylesheet" href="/styles/pivot.css" type="text/css" />
+</head>
+<!-- NG APP -->
+  <body ng-app="angnavApp">
+<div id="wrapper">
+  
+<div id="topbar">
+  
+  <div class="container">
+    
+    <a href="javascript:;" id="menu-trigger" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+      <i class="icon-cog"></i>
+    </a>
+  
+    <div id="top-nav">
+      
+      <ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            View Dashboards       
+            <b class="caret"></b>
+          </a>
+          
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">View Dashboard #1</a></li>
+            <li><a href="#">View Dashboard #2</a></li>
+            <li class="dropdown-submenu">
+                      <a tabindex="-1" href="#">Dashboard Sub Menu</a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Sub 1</a></li>
+                        <li><a tabindex="-1" href="#">Sub 2</a></li>
+                        <li><a tabindex="-1" href="#">Sub 3</a></li>
+                      </ul>
+                    </li>
+          </ul> 
+        </li>
+      </ul>
+      
+      <ul class="pull-right">
+        <li><a href="#"><i class="icon-user"></i> Logged in as John Doe</a></li>
+        <li><a href="#"><span class="badge badge-primary">1</span> New Message</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Settings            
+            <b class="caret"></b>
+          </a>
+          
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">Settings #1</a></li>
+            <li><a href="#">Settings #2</a></li>
+            <li class="dropdown-submenu">
+                      <a tabindex="-1" href="#">Dropdown menu</a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Second 1</a></li>
+                        <li><a tabindex="-1" href="#">Second 2</a></li>
+                        <li><a tabindex="-1" href="#">Second 3</a></li>
+                      </ul>
+                    </li>
+          </ul> 
+        </li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+      
+    </div> <!-- /#top-nav -->
+    
+  </div> <!-- /.container -->
+  
+</div> <!-- /#topbar -->
+
+
+  
+  
+<div id="header">
+  
+  <div class="container">
+    
+    <a href="#" class="brand">Dashboard Demo</a>
+    
+    <a href="#" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <i class="icon-reorder"></i>
+        </a>
+  
+    <div class="nav-collapse">
+      <ul id="main-nav" class="nav pull-right">
+    
+        <li class="dropdown">          
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-dashboard"></i>
+            <span>Dashboards</span> 
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Add</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Remove</a></li>
+            <li><a href="#">Logout</a></li>
+                    </li>
+          </ul>           
+        </li>
+        <li class="dropdown">         
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-tasks"></i>
+            <span>Reports</span> 
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">
+            <li><a href="#">Recent Reports</a></li>
+            <li><a href="#">Past Due</a></li>
+            <li><a href="#">Approved</a></li>
+            <li><a href="#">Charts</a></li>
+            <li><a href="#">Actuals</a></li>
+            <li class="dropdown-submenu">
+                      <a tabindex="-1" href="#">Dropdown menu</a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Actuals Period 1</a></li>
+                        <li><a tabindex="-1" href="#">Actuals Period 2</a></li>
+                        <li><a tabindex="-1" href="#">Actuals Period 3</a></li>
+                      </ul>
+                    </li>
+          </ul>           
+        </li>
+        
+        <li class="dropdown">         
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-bar-chart"></i>
+            <span>Analysis</span> 
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">
+            <li><a href="#">Review</a></li>
+            <li><a href="#">High Level Overview</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Live Data</a></li>
+            <li><a href="#">Snapshots</a></li>
+          </ul>           
+        </li>
+        
+        <li class="dropdown active">         
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-sitemap"></i>
+            <span>Change Management</span> 
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">              
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Pending Changes</a></li>
+            <li><a href="#">Approved Changes</a></li>
+            <li><a href="#">Request Change Status</a></li>
+          </ul>           
+        </li>
+            <li class="dropdown">         
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-briefcase"></i>
+            <span>Approvals</span> 
+            <b class="caret"></b>
+          </a>  
+        
+          <ul class="dropdown-menu">            
+            <li><a href="#">Past Actuals</a></li>
+            <li><a href="#">Past Year</a></li>
+            <li><a href="#">Past Quarter</a></li>
+            <li><a href="#">Past Month</a></li>
+            <li><a href="#">Past Week</a></li>
+          </ul>           
+        </li>
+      </ul>
+    </div> <!-- /.nav-collapse -->
+  </div> <!-- /.container -->
+</div> <!-- /#header -->
+
+<div id="masthead">
+  <div class="container">
+    <div class="masthead-pad">
+      <div class="masthead-text">
+    <h2>Change Management</h2>
+      <b>To begin:</b>
+      <ul>
+        <li>Select the fields you would like to display from the Label Fields/Summary Fields drop down.</li>
+        <li>Then filter your data by selecting from the filters drop down.</li>
+      </ul>
+    </p>
+      </div> <!-- /.masthead-text -->
+    </div>
+  </div> <!-- /.container --> 
+</div> <!-- /#masthead -->
+<div id="content">
+  <div class="container">   
+    <div class="row">
+    <div class="span12">
+    <div class="subnav">
+      <ul class="nav nav-pills">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Filter Fields
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu stop-propagation" style="overflow:auto;max-height:450px;padding:10px;">
+            <div id="filter-list"></div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Row Label Fields
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu stop-propagation" style="overflow:auto;max-height:450px;padding:10px;">
+            <div id="row-label-fields"></div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Column Label Fields
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu stop-propagation" style="overflow:auto;max-height:450px;padding:10px;">
+            <div id="column-label-fields"></div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Summary Fields
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu stop-propagation" style="overflow:auto;max-height:450px;padding:10px;">
+            <div id="summary-fields"></div>
+          </ul>
+        </li>
+        <li class="dropdown pull-right">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Reports
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+           <li><a id="ar-aged-balance" href="#">Area Description</a></li>
+           <li><a id="project-report" href="#">Project Description</a></li>
+            <li><a id="contract-detail" href="#">Project Details</a></li>
+             <li><a id="change-report" href="#">Change Report</a></li>
+           <li><a id="miami-invoice-detail" href="#">Contract Details</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <hr/>
+    <h3>Results</h3>
+    <span id="pivot-detail"></span>
+    <hr/>
+    <div id="results">
+   
+    </div>
+  </div>
+</body>
+
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="components/es5-shim/es5-shim.js"></script>
+      <script src="components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/angular-sanitize/angular-sanitize.js"></script>
+
+<!-- build:js scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <!-- endbuild -->
+<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts/subnav.js"></script>
+<script type="text/javascript" src="/scripts/accounting.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/scripts/dataTables.bootstrap.js"></script>
+<!-- jquery_pivot must be loaded after pivot.js and jQuery -->
+  <script type="text/javascript" src="/scripts/pivot.js"></script>
+  <script type="text/javascript" src="/scripts/jquery_pivot.js"></script>
+  <script type="text/javascript" src="/scripts/dataformulas.js"></script>
+  <script src="scripts/libs/modernizr-2.5.3.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

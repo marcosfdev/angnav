@@ -1,6 +1,5 @@
-# ignore IntelliJ Idea files
-.idea
-*.iml
-
-# ignore MacOS files
-.DS_Store
+node_modules
+dist
+.tmp
+.sass-cache
+app/components
